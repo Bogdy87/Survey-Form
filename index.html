@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Stories</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">User Stories</h1>
+  </header>
+
+  <main>
+
+    <p id="description">This is a form that fulfills certain user stories.</p>
+
+    <form id="survey-form">
+
+      <div class="form-group">
+        <label for="name" id="name-label">Name:</label>
+        <input id="name" type="text" name="name" placeholder="Enter your name" required>      
+      </div>
+
+      <div class="form-group">
+        <label for="email" id="email-label">Email:</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" required>
+      </div>  
+
+
+      <div class="form-group">  
+        <label for="number" id="number-label">Number:</label>
+        <input id="number" type="number" name="number" min="1" max="99999999" placeholder="Enter a number" required>
+      </div>  
+
+      <div class="form-group">
+        <label for="dropdown">Select:</label>
+        <select id="dropdown" name="dropdown">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+        </select>
+      </div>  
+
+      <div class="form-group">
+        <label for="radio-group">Choose one:</label> <br>
+        <input type="radio" name="radio-group" value="option1">Option 1 <br>
+        <input type="radio" name="radio-group" value="option2">Option 2 <br>
+      </div>
+
+      <div class="form-group">
+        <label for="chackbox-group">Choose several:</label> <br>
+        <input type="checkbox" name="chackbox-group" value="option1">Option 1 <br>
+        <input type="checkbox" name="chackbox-group" value="option2">Option 2  <br>
+      </div>
+
+      <div class="form-group">
+        <label for="comments">Comments:</label> <br>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+      </div>
+
+        <button type="submit" id="submit">Submit</button>
+      
+    </form>
+  </main>
+</body>
+</html>
